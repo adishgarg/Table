@@ -3,9 +3,9 @@
 import DynamicTable from "./components/table";
 import { useEffect, useState } from "react";
 
-const columns = ["id", "name", "email", "role", "createdAt"];
+const columns = ["ID", "name", "email", "role", "createdAt"];
 const columnDisplayMap = {
-  id: "ID",
+  ID: "ID",
   name: "Full Name",
   email: "Email Address",
   role: "User Role",
@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen py-6">
+    <div className="">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl font-semibold text-center mb-8">User Data</h1>
         <DynamicTable columns={columns} rows={rows} columnDisplayMap={columnDisplayMap} />

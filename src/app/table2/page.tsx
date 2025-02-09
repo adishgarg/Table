@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-    <div>
+    <div className="">
       <DynamicTable columns={columns} rows={rows} columnDisplayMap={columnDisplayMap}/>
     </div>
     </>
